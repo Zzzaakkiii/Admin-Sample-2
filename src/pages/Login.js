@@ -9,7 +9,6 @@ import Page from '../components/Page';
 import Logo from '../components/Logo';
 // sections
 import { LoginForm } from '../sections/auth/login';
-import AuthSocial from '../sections/auth/AuthSocial';
 
 // ----------------------------------------------------------------------
 
@@ -65,7 +64,8 @@ export default function Login() {
     <Page title="Login">
       <RootStyle>
         <HeaderStyle>
-          <Logo />
+          {/* <Logo /> */}
+          <h5>Parent Control System</h5>
 
           {smUp && (
             <Typography variant="body2" sx={{ mt: { md: -2 } }}>
@@ -89,12 +89,10 @@ export default function Login() {
         <Container maxWidth="sm">
           <ContentStyle>
             <Typography variant="h4" gutterBottom>
-              Sign in to Minimal
+              Sign in to Parent Control System
             </Typography>
 
             <Typography sx={{ color: 'text.secondary', mb: 5 }}>Enter your details below.</Typography>
-
-            <AuthSocial />
 
             <LoginForm />
 
